@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TRSH media — We find them, convert them and fill your calendar.">
+  <title>TRSH media</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root{--cream:#f7f5f0;--black:#050505;--purple:#8b69a9;--pink:#c796bc;--deep:#1c1c1c}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--black);font-family:Arial,sans-serif;background:#f7f5f0}
+    a{color:inherit}
+    .topbar{position:sticky;top:0;z-index:20;height:72px;display:flex;align-items:center;background:#1c1c1c;color:#f9f9f9;padding:0 48px;box-shadow:0 2px 16px rgba(0,0,0,.12)}
+    .brand{display:flex;align-items:center;gap:14px;text-decoration:none;font-family:Comfortaa,sans-serif;font-size:20px}
+    .brand img{width:40px;height:40px;object-fit:contain}
+    .hero{min-height:430px;display:flex;align-items:center;justify-content:center;text-align:center;padding:72px 28px;position:relative;overflow:hidden;background:linear-gradient(120deg,#73579a,#aa78ae 50%,#d39abd)}
+    .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(45,24,72,.25),rgba(255,255,255,.05));pointer-events:none}
+    .hero-inner{position:relative;z-index:1;max-width:1150px}
+    h1{margin:0;font-family:"Playfair Display",serif;font-size:clamp(46px,7vw,92px);font-weight:400;line-height:1.02;color:var(--cream);letter-spacing:-.03em}
+    h1 em{display:block;color:#000;font-size:clamp(27px,3.1vw,46px);line-height:1.2;margin-top:28px}
+    .process{max-width:1000px;margin:0 auto;padding:70px 40px 80px;background:#f7f5f0}
+    .process h2{font-family:Arial,sans-serif;font-size:21px;font-style:italic;text-decoration:underline;margin:0 0 22px;font-weight:700}
+    .process .lead{font-size:21px;font-style:italic;font-weight:700;margin:0 0 24px}
+    .steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 48px}
+    .steps li{font-size:20px;padding:13px 0;border-bottom:1px solid rgba(0,0,0,.12)}
+    .steps li::before{content:"✓";font-weight:700;margin-right:12px}
+    .steps li:last-child::before{content:"💸"}
+    .contact{padding:68px 24px 78px;text-align:center;background:#1c1c1c;color:#f9f9f9}
+    .contact h2{font-family:Comfortaa,sans-serif;font-size:24px;font-weight:400;margin:0 0 28px}
+    .socials{display:flex;justify-content:center;gap:14px;margin-bottom:28px}
+    .socials a{width:48px;height:48px;border:1px solid rgba(255,255,255,.45);border-radius:50%;display:grid;place-items:center;text-decoration:none;font-family:Arial,sans-serif;font-weight:700;transition:.2s ease}
+    .socials a:hover{transform:translateY(-3px);background:#fff;color:#1c1c1c}
+    .email{display:inline-flex;align-items:center;justify-content:center;min-width:130px;padding:12px 28px;border:1px solid #f9f9f9;text-decoration:none;font-family:Comfortaa,sans-serif;font-size:14px;transition:.2s ease}
+    .email:hover{background:#f9f9f9;color:#1c1c1c}
+    footer{background:#111;color:#888;text-align:center;font:12px Arial,sans-serif;padding:16px}
+    @media(max-width:700px){
+      .topbar{height:62px;padding:0 20px}.brand{font-size:16px}.brand img{width:34px;height:34px}
+      .hero{min-height:500px;padding:60px 20px}.hero h1{font-size:clamp(43px,12vw,64px)}.hero h1 em{font-size:clamp(24px,6vw,34px);margin-top:24px}
+      .process{padding:52px 24px 64px}.steps{grid-template-columns:1fr}.steps li{font-size:18px}
+      .contact{padding:56px 20px 64px}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="TRSH media home">
+      <img src="assets/logo.png" alt="TRSH media logo">
+      <span>TRSH media</span>
+    </a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="TRSH media introduction">
+      <div class="hero-inner">
+        <h1>Someone is scrolling for exactly what you offer.<em>We find them, convert them and fill your calendar.</em></h1>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <h2>9 Step Process &gt;&gt;</h2>
+      <p class="lead">You just focus on Closings !!</p>
+      <ul class="steps">
+        <li>Winning Campaign</li>
+        <li>High-Ticket Funnel</li>
+        <li>Pre-Screening</li>
+        <li>**Concierge Team</li>
+        <li>Qualified Leads</li>
+        <li>Appointments</li>
+        <li>Live Transfers</li>
+        <li>Inbound Calls</li>
+        <li>Closed Deals</li>
+      </ul>
+    </section>
+  </main>
+
+  <section class="contact" id="contact">
+    <h2>Contact us</h2>
+    <div class="socials" aria-label="Social links">
+      <a href="https://x.com/trshmediahq" target="_blank" rel="noopener noreferrer" aria-label="X">X</a>
+      <a href="https://www.instagram.com/trshmediahq/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+      <a href="https://www.facebook.com/trshmedia" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+    </div>
+    <a class="email" href="https://mail.google.com/mail/?view=cm&fs=1&to=trshmediahq@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+  </section>
+  <footer>© TRSH media</footer>
+</body>
+</html>
